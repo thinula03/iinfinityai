@@ -1,0 +1,228 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/PKRIC81.jpg);
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: rgb(27, 29, 30);
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #f01c1cc7;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #433131;
+	transition: .4s;
+}
+.btn{
+	background-color:#483c3c;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+}
+h1{
+	color: rgb(26, 24, 24);
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.teammems{
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+.memname{
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+img{
+	justify-content: center;
+}
+.members1{
+	background-color: #101010;
+}
+.teamhead{
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
+.aiprogrammingcard{
+	padding-top: 50px;
+}
+.footerbg{
+	background-color: #191919;
+}
+.members2{
+	padding-bottom: 50px;
+}
+.profile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 50px;
+}
+.profile:nth-of-type(2n){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 50px;
+	direction: rtl;
+}
+.profile-text{
+	width: 60%;
+}
+ .profile-img{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around; 
+	width: 40%;
+}
+
+/*
+Responsive code for: 
+  1. Mobile size - 321px
+  2. Tablet size - 376px
+  3. Desktop size - 426px
+  4. Large desktop size - 769px
+*/
+@media screen and (max-width: 321px){
+	.profile-text{
+		width: 100%;
+	}
+	.profile-img{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 376px){
+	.profile-text{
+		width: 40%;
+	}
+	.profile-img{
+		width: 60%;
+	}
+}
+@media screen and (min-width: 426px){
+	.profile-text{
+		width: 60%;
+	}
+	.profile-img{
+		width: 40%;
+	}
+}
+@media screen and (min-width: 769px){
+	.profile-text{
+		width: 40%;
+	}
+	.profile-img{
+		width: 60%;
+	}
+}
